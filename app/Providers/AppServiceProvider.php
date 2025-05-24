@@ -4,7 +4,8 @@ namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
-use App\SMS\SmsService as SmsService;
+use App\SmsService\SmsManager as SmsService;
+
 
 
 class AppServiceProvider extends ServiceProvider

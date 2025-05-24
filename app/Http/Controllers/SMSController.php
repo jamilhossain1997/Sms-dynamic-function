@@ -9,7 +9,7 @@ class SMSController extends Controller
 {
     public function sendRegularSMS()
     {
-      $response=SmsService::setCountry('bd')->driver('')->send('8801739921850', 'Hello Jamil Hossain');
+      $response=SmsService::setCountry('bd')->driver('moblie_route')->send('8801739921850', 'Hello Jamil Hossain');
         return response()->json([
             'status' => 'SMS Sent',
             'messages'=>$response

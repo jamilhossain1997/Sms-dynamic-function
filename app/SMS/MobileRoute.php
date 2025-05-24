@@ -2,10 +2,12 @@
 
 namespace App\SMS;
 
+use App\SMS\SmsInterface;
+
 class MobileRoute implements SmsInterface
 {
     protected string $countryCode = '';
-    protected string $gatewayName = 'custom';
+    protected string $gatewayName = 'moblie_route';
     protected array $config;
 
     public function __construct(array $config = [])
